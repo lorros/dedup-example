@@ -1,7 +1,1 @@
-# This file has been renamed from dedup-transport-to-port to dedup-transport-to-port-mp3s
-
-# The content of the file should be preserved. If you have specific content then please provide it otherwise I will use a placeholder.
-
-# Placeholder content for dedup-transport-to-port-mp3s
-
-# Add any relevant information or details here.
+for i in *.mp3; do H=`sha512sum "$i" |cut -f1 -d' '`; if [ ! -f dedup-exists/$H ]; then cp "$i" dedup-store/$H; cd firsts; ln -s ../dedup-store/$H "$i"; cd ..; fi; echo "$i" >> dedup-exists/$H; done
