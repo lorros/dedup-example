@@ -1,0 +1,1 @@
+This project is a public excerpt from another project available under the lcl/|c| license. This version is free and libre to use, except for uses that would cause massive survival rate decreases in population or severe social injustice under DC Law or Sea Law.
